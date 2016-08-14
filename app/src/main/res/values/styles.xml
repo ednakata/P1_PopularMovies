@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- Layout Styles -->
+    <style name="layout_detail">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="layout_detail_metadata">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:background">#424242</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="layout_filler">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- Grid Styles -->
+    <style name="grid_movies">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <!-- ScrollView Styles -->
+    <style name="scrollview">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Image Styles -->
+    <style name="image_allImages">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="image_backdrop_images" parent="image_allImages">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="image_poster_images" parent="image_allImages">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="text_allText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_title" parent="text_allText">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="text_metadata" parent="text_allText">
+        <item name="android:textSize">@dimen/text_default</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="text_description" parent="text_metadata">
+        <item name="android:paddingTop">8dp</item>
+    </style>
+</resources>

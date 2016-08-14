@@ -1,0 +1,56 @@
+<resources>
+    <!-- Application Strings -->
+    <string name="app_name">Popular Movies</string>
+    <string name="connectivity_error_msg">Internet not available. Some info may not display.</string>
+
+    <!-- Settings Strings -->
+    <string name="action_change_sort">Change Sort Order</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- themoviedb.org Strings -->
+    <string name="themoviedb_URL_Popular_Movies">http://api.themoviedb.org/3/movie/popular?api_key=</string>
+    <string name="themoviedb_URL_Top_Rated_Movies">http://api.themoviedb.org/3/movie/top_rated?api_key=</string>
+    <string name="themoviedb_api_parameter_name">api_key</string>
+    <string name="themoviedb_api_key"></string>
+    <string name="themoviedb_scheme">https</string>
+    <string name="themoviedb_api_authority">api.themoviedb.org</string>
+    <string name="themoviedb_image_authority">image.tmdb.org</string>
+    <string name="themoviedb_path_a">3</string>
+    <string name="themoviedb_path_b">movie</string>
+    <string name="themoviedb_image_path_a">t</string>
+    <string name="themoviedb_image_path_b">p</string>
+    <string name="themoviedb_image_path_poster_size">w185</string>
+    <string name="themoviedb_image_path_backdrop_size">w780</string>
+
+    <!-- themoviedb.org JSON object strings-->
+    <string name="themoviedb_json_results">results</string>
+    <string name="themoviedb_json_id">id</string>
+    <string name="themoviedb_json_title">title</string>
+    <string name="themoviedb_json_overview">overview</string>
+    <string name="themoviedb_json_poster_path">poster_path</string>
+    <string name="themoviedb_json_backdrop_path">backdrop_path</string>
+    <string name="themoviedb_json_release_date">release_date</string>
+    <string name="themoviedb_json_vote_average">vote_average</string>
+
+    <!-- bundle extras strings -->
+    <string name="ex_backdrop_url">EXTRA_BACKDROP_URL</string>
+    <string name="ex_description">EXTRA_DESCRIPTION</string>
+    <string name="ex_poster_url">EXTRA_POSTER_URL</string>
+    <string name="ex_rating">EXTRA_RATING</string>
+    <string name="ex_release_date">EXTRA_RELEASE_DATE</string>
+    <string name="ex_title">EXTRA_TITLE</string>
+
+    <!-- preference strings -->
+    <string name="pref_sort_key">SortOrder</string>
+    <string name="pref_sort_display_name">Change Sort Order</string>
+    <string name="pref_sort_popular">popular</string>
+    <string name="pref_sort_top_rated">top_rated</string>
+    <string name="pref_sort_option_popular">By Most Popular</string>
+    <string name="pref_sort_option_top_rated">By Top Rated</string>
+
+    <!-- UI content strings -->
+    <string name="rating_appendage">/10</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="movie_backdrop">Movie Image</string>
+
+</resources>

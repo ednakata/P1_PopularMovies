@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_detail"
+    tools:context=".MovieDetailActivity$MovieDetailFragment">
+
+    <ImageView
+        android:id="@+id/backdrop_image_view"
+        style="@style/image_backdrop_images"
+        android:src="@drawable/placeholder"
+        android:contentDescription="@string/movie_backdrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/layout_filler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/layout_filler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:background="#424242">
+
+                <ImageView
+                    android:id="@+id/poster_image_view"
+                    style="@style/image_poster_images"
+                    android:src="@drawable/placeholder"
+                    android:contentDescription="@string/movie_poster"/>
+
+                <ScrollView style="@style/scrollview">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/text_title"
+                            android:id="@+id/movie_title_textview" />
+                        <!--android:text="The Unbearable Case of Benjamin Bratt" />-->
+
+                        <TextView
+                            style="@style/text_metadata"
+                            android:id="@+id/release_date_textview"
+                            android:layout_below="@id/movie_title_textview" />
+                        <!--android:text="June 24, 2005" />-->
+
+                        <TextView
+                            style="@style/text_metadata"
+                            android:id="@+id/rating_textview"
+                            android:layout_below="@id/release_date_textview" />
+                        <!--android:text="4.2/10" />-->
+
+                        <TextView
+                            style="@style/text_description"
+                            android:id="@+id/description_textview"
+                            android:layout_below="@id/rating_textview" />
+                        <!--android:text="From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.  From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences." />-->
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <View
+                style="@style/layout_filler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
